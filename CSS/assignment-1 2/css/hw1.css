@@ -1,0 +1,118 @@
+body {
+	margin: 5%;
+	padding: 5px; 
+}
+header {
+	background-color: #cccccc; 
+	background-image: url(../images/flywheel.jpg);
+	background-image: url(http://intro-webdesign.com/CSS/assignment-2/images/flywheel.jpg); /* This is here so that the image still shows up even on others' machines without a local copy in the specified place */
+	background-repeat: none; 
+	background-position: top;
+	background-size: 100%;  
+	padding: 5px; 
+}
+h1 {
+	text-align: center;
+	color: #d1111a; 
+	text-transform: uppercase;
+	font-size: 36pt; 
+}
+nav {
+	width: 80%; 
+	align: center;
+}
+nav a{
+	display: inline-block; 
+	margin: 5%;
+	padding: 10px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px; 
+	text-decoration: none;
+}
+.active {
+	background-color: #3366ff; 
+}
+section {
+	width: 75%; 
+	display: inline-block;
+	float: right; 
+	margin-right: 2%;
+}
+.left {
+	width: 20%; 
+	float: left;
+	background: #ccccff;
+	text-align: center;
+}
+.right {
+	clear: right; 
+	float: right; 
+	padding-left: 2%; 
+	margin-left: 1%; 
+}
+h2 {
+	color: #d1111a; 
+	text-transform: uppercase;
+}
+a {
+	text-align: center;
+	color: #5a0441; 
+	background-color: #d5d6dd;
+}
+section {
+	background-color: #c1ffc1;
+}
+img {
+	display: inline-block;
+	height: 25%; 
+	width: 75%; 
+	border: 5px solid #000000; 
+	margin: 0 auto;
+	margin-top: 4%;  
+}
+table {
+	font-family: Tahoma, sans-serif;
+	font-size: 14px; 
+	line-height: 20px; 
+	width: 80%; 
+	margin: 8%;
+	border-spacing: 0; 
+}
+th {
+	text-shadow: 2px 2px #ffcccc;
+	border: 3px groove #cccccc;
+	border-bottom: 6px groove #cccccc; 
+	-webkit-border-radius: 25% 25% 0 0;
+	-moz-border-radius: 25% 25% 0 0;
+	-o-border-radius: 25% 25% 0 0;
+	border-radius: 25% 25% 0 0;
+}
+th:first-child {
+	border-right: 0; 
+}
+th:last-child {
+	border-left: 0; 
+} 
+tr {
+	background-color: #99ffff; 
+}
+tr:first-child {
+	background: linear-gradient(top, #cccccc 0%, #99ffff 100%);
+	background: -webkit-linear-gradient(top, #cccccc 0%, #99ffff 100%);
+	background: -moz-linear-gradient(top, #cccccc 0%, #99ffff 100%);
+	background: -o-linear-gradient(top, #cccccc 0%, #99ffff 100%); 
+}
+td {
+	padding: 2%;
+	background-color: #ccffff;  
+	text-align: center; 
+	opacity: .6; 
+	border-bottom: 3px ridge; 
+}
+td:hover{
+	opacity: 1; 
+}
+td:first-child {
+	text-align: left;
+}

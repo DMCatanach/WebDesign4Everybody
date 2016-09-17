@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Playing with JavaScript</title>
+</head>
+<body>
+	<h1 id = "test">Tester</h1>
+	<h2 id = "test2">Tester</h2>
+
+	<!--This is how to use innerHTML to modify; here, we're modifying the header tags.-->
+	<script> 
+		document.getElementById('test').innerHTML = "Hello World"; 
+		document.getElementById('test2').innerHTML = "Nice to meet you!";
+	</script>
+
+	<p>What happens when you have two elements with identical ids - here "test"?</p> 
+
+	<script>
+		document.write("Hello World");
+	</script>
+
+	<p>As a test, what happens if you remove the script tag up above?</p> 
+
+	<!--alert code, with alternative for no JS-->
+	<script>alert("Test")</script>
+	<noscript>Your browser doesn't support or has disabled JavaScript</noscript>
+
+	<!--prompt code-->
+	<script>
+		prompt("What is your name?");
+	</script>
+	<p>And that's how prompt boxes are done.</p> 
+
+	<!--console log-->
+	<p>JavaScript console can help figure out where the bugs in your code are. We've played with this a little before. But we're going to leave out some quot marks here too, just for shits and giggles. </p> 
+	<script>
+		console.log("Hello World Too");
+	</script>
+
+	<p>After all other modifications made, save this somewhere else; the URL line should change.</p> 
+	<script>
+		var name; 
+		name = prompt("What is your name?");
+		document.write(name); 
+		document.write("<h1>" + name + "</h1>"); 
+		document.write(name +7 +"<br>");
+		document.write(document.baseURI+"<br>"); 
+		document.write(document.title+"<br>");
+		var date = Date(); 
+		document.write(date); 
+		document.write(document.location+"<br>");
+		var pars = document.getElementsByTagName('p');
+		document.write(pars + "<br>");
+		document.write(pars.length);
+	</script>
+
+	<p>The height of this window is...<span id = "output"></span></p> 
+	<script> 
+		var h = window.innerHeight; 
+		document.getElementById('output').innerHTML = h; 
+	</script>
+	<p>Try resizing the height of the window and reloading the page.</p> 	
+		
+
+</body>
+</html>
+

@@ -1,0 +1,132 @@
+body {
+	margin: 5%;
+	padding: 5px; 
+}
+header {
+	background-color: #cccccc; 
+	background-image: url(../images/flywheel.jpg);
+	background-repeat: none; 
+	background-position: top;
+	background-size: 100%;  
+	padding: 5px; 
+
+}
+h1 {
+	text-align: center;
+	color: #d1111a; 
+	text-transform: uppercase;
+	font-size: 36pt; 
+}
+nav {
+	width: 80%; 
+	align: center;
+}
+nav a{
+	display: inline-block; 
+	margin: 5%;
+	padding: 10px;
+	border-radius: 10px; 
+	text-decoration: none;
+}
+.active {
+	background-color: #3366ff; 
+}
+section {
+	width: 75%; 
+	display: inline-block;
+	float: right; 
+	margin-right: 2%;
+}
+.left {
+	width: 23%; 
+	float: left;
+	background: #ccccff;
+	text-align: center;
+}
+.right {
+	clear: right;
+	float: right; 
+}
+h2 {
+	color: #d1111a; 
+	text-transform: uppercase;
+}
+a {
+	text-align: center;
+	color: #5a0441; 
+	background-color: #d5d6dd;
+}
+section {
+	background-color: #c1ffc1;
+}
+img {
+	display: inline-block;
+	height: 25%; 
+	width: 75%; 
+	border: 5px solid #000000; 
+	margin: 0 auto;
+	margin-top: 4%;  
+}
+/*style table with at least four properties - use pseudo-classes, pseudo-elements, gradients
+style font (family, size, line height), width (75-90%), margin (center table)
+table headings - border (round only top two corners, thicker bottom border, one other property), background color, 
+	gradient (requires browser prefixes)
+table styling - first column left aligned, other columns centered - DONE
+table row opacity between .6 and .8, change opacity to 1 on hover - DONE 
+table elements - <td> styled with at least four properties: padding, font, background color, border radius 2px, optional text-shadow*/
+
+table {
+	font-family: Tahoma, sans-serif;
+	font-size: 14px; 
+	line-height: 20px; 
+	width: 80%; 
+	margin: 10%;
+	border-spacing: 0; 
+	-webkit-border-radius: 25px 25px 0 0;
+	border-radius: 25px 25px 0 0; 
+}
+tr:first-child {
+	
+}
+tr {
+	background-color: #99ffff; 
+}
+/*border isn't working*/ 
+tr:first-child {
+	border: 2px;
+	border-radius: 2%, 2%, 0%, 0%;
+	border-bottom: 5px; 
+}
+td {
+	padding: 2%;
+	background-color: #ccffff;  
+	text-align: center; 
+	opacity: .6; 
+}
+td:hover{
+	opacity: 1; 
+}
+td:first-child {
+	text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

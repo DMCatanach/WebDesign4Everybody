@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>JavaScript Course Week 2</title> 
+		<meta charset="UTF-8"> 
+		<link rel="stylesheet" href="JSweek2.css">	
+		<script type="text/javascript" src="JSweek2.js"></script>
+	</head>
+	<body onload="message('LOAD')"
+	onresize="message('RESIZE')"> 
+		<h1>JavaScript Events - Responding to Events</h1> 
+		<p onclick="message('CLICK')">It is possible to call functions based on Events</p> 
+		<p on mouseover="message('MouseOver')">Click on the paragraph above to trigger an <em>onclick</em> event. Reload the page to see an onload event.</p> 
+		<p id = "output"></p> 
+		<h2>Split up your code</h2>
+		<script> 
+		document.write("Hello World");
+		</script> 
+		<h1>Functions</h1> 
+		<p id='output2'>Stuff</p> 
+		<script>
+			message("My message is 'Hi!'"); //This isn't working correctly
+		</script>
+		<h1>JavaScript Date function</h1> 
+		<p id="demo">This is a paragraph.</p> 
+		<button type="button"
+		onclick="displayDate()">Display Date</button> 
+		<h1>Modify the DOM</h1> 
+		<button class="event"
+			onclick="document.getElementById('stuff').innerHTML = 'Clicked First Button';">First</button> 
+		<button class="event"
+			onclick="document.getElementById('stuff').innerHTML = 'Clicked Another Button';">Third</button>	
+		<p>This code shouldn't change.</p> 
+		<p id="stuff">This will change.</p> 
+		<p>This shouldn't change either.</p> 
+		<h1>Changing the Style</h1> 
+		<p>JavaScript can change the style of an HTML element.</p> 
+		<button class="event" type = "button" 
+			onclick="openMe()">Open!</button> 
+		<button class="event" type ="button" 
+			onclick="closeMe()">Close!</button> 
+		<p id="demo2">Extra details... You can open and close this paragraph using the buttons above.</p> 	
+		<img class = "reg" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/Colleen82.jpg" alt = "Awesome 80's haircut"	onclick="console.log(this.alt)">
+		<div onclick="console.log(this.innerHTML)">Hi there, checking out a div.</div> 
+		<hr> 
+		<img class = "reg" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/FamilyChristmas74.jpg" alt="Another Beautiful Picture" id="ID-1" onclick="displayId(this)"> 
+		<div onclick="displayId(this)" id="ID-2">Another Div</div> 
+		<div id="message">Hover over an image to display the alt text.</div> 
+		<img class="preview" alt="Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "showProperties(this)" onmouseleave="document.getElementById('message').innerHTML='Hover over an image';">
+		<img class="preview" alt="With My Boy" src="https://s2-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.jpg" onmouseover = "showProperties(this)" onmouseleave = "document.getElementById('message').innerHTML='Hover over an image';"> 
+		<img class="preview" alt="Young Puppy" src="https://s2-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" onmouseover = "showProperties(this)" onmouseleave = "document.getElementById('message').innerHTML='Hover over an image';"> 
+		<!--The second two image links in this section are broken, but the rest of the code works, and that's the important part. --> 
+	</body>
+
+
+
+
+
+</html>
